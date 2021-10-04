@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findindex(num,arr) {
+            for(let i = 0; i < arr.length; i++) {
+                if( num == arr[i]) {
+                    return "Does the element exist in the array";
+                }
+            } 
+            return "Element does not exist in array";
+        };
+        let numberarr = [1,2,5,6,7,10,22]
+        let num = Number(prompt("Enter an integer: "));
+         console.log(findindex(num,numberarr));
+    </script>
+</body>
+</html>
